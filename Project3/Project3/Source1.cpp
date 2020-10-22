@@ -7,17 +7,22 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	//Массивы
-	
-	const int size = 10;
 
-	int arr[size]{ 11, 25, 34, 55 }; 
 
-	for (int i = 0; i < size; i++)
+
+	int array[10][10];
+
+	for (int i = 0; i < 10; i++)
 	{
-		std::cout << arr[i] << std::endl;
+		for (int a = 0; a <= i; a++)
+		{// циклпроходапо колонками заполненияихвозраст значениями
+			array[i][a] = a + 1;
+			std::cout << array[i][a] << "\t";
+		}
+		std::cout << std::endl;
 	}
 	//нельзя назнаитьпременуюмассива заранее
-	
+
 
 
 	std::system("pause");
